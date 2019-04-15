@@ -29,6 +29,8 @@ A common way to secure communication in a hadoop cluster is by changing the hado
    </property> 
 ```
 
+To use 'Privacy' or 'Integrity' for hadoop.rpc.protection, SQL Server must be at least SQL Server 2016 SP1 CU7, SQL Server 2016 SP2, or SQL Server 2017 CU3.
+
 ## Example XML files for CDH 5.X cluster
 
 Yarn-site.xml with yarn.application.classpath and mapreduce.application.classpath configuration.
@@ -144,7 +146,7 @@ To connect to a Kerberos-secured Hadoop cluster using MIT KDC:
 1. Find the Hadoop configuration directory in the installation path of SQL Server. Typically, the path is:  
 
    ```  
-   C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\Binn\Polybase\Hadoop\conf  
+   C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\Binn\PolyBase\Hadoop\conf  
    ```  
 
 2. Find the Hadoop side configuration value of the configuration keys listed in the table. (On the Hadoop machine, find the files in the Hadoop configuration directory.)  

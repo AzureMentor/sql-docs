@@ -5,8 +5,7 @@ ms.date: "03/04/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_removedbreplication"
@@ -37,10 +36,10 @@ sp_removedbreplication [ [ @dbname = ] 'dbname' ]
 ```  
   
 ## Arguments  
- [ **@dbname=**] **'***dbname***'**  
+`[ @dbname = ] 'dbname'`
  Is the name of the database. *dbname* is **sysname**, with a default value of NULL. When NULL, the current database will be used.  
   
- [ **@type** = ] *type*  
+`[ @type = ] type`
  Is the type of replication for which database objects are being removed. *type* is **nvarchar(5)** and can be one of the following values.  
   
 |||  

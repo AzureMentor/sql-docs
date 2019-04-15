@@ -5,8 +5,7 @@ ms.date: "03/04/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_scriptpublicationcustomprocs"
@@ -33,7 +32,7 @@ sp_scriptpublicationcustomprocs [ @publication = ] 'publication_name'
 ```  
   
 ## Arguments  
- [ **@publication**=] **'***publication_name***'**  
+`[ @publication = ] 'publication_name'`
  Is the name of the publication. *publication_name* is **sysname** with no default.  
   
 ## Return Code Values  

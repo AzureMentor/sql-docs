@@ -5,8 +5,7 @@ ms.date: "03/06/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_drop_agent_profile"
@@ -33,7 +32,7 @@ sp_drop_agent_profile [ @profile_id = ] profile_id
 ```  
   
 ## Arguments  
- [ **@profile_id=**] *profile_id*  
+`[ @profile_id = ] profile_id`
  Is the ID of the profile to be dropped. *profile_id* is **int**, with no default.  
   
 ## Return Code Values  

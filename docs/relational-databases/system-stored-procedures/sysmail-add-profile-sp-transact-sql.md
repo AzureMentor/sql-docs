@@ -36,13 +36,13 @@ sysmail_add_profile_sp [ @profile_name = ] 'profile_name'
 ```  
   
 ## Arguments  
- [ **@profile_name** = ] **'***profile_name***'**  
+`[ @profile_name = ] 'profile\_name'`
  The name for the new profile. *profile_name* is **sysname**, with no default.  
   
- [ **@description** = ] **'***description***'**  
+`[ @description = ] 'description'`
  The optional description for the new profile. *description* is **nvarchar(256)**, with no default.  
   
- [ **@profile_id** = ] *new_profile_id***OUTPUT**  
+`[ @profile_id = ] _new\_profile\_idOUTPUT`
  Returns the ID for the new profile. *new_profile_id* is **int**, with a default of NULL.  
   
 ## Return Code Values  

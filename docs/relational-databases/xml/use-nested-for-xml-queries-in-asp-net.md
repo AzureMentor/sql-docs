@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "nested FOR XML queries in ASP.NET"
   - "ASP.NET [SQL Server]"
 ms.assetid: 691ac7dd-afc5-4760-932c-2b1dcd9394ed
-author: "douglaslMS"
-ms.author: "douglasl"
+author: MightyPen
+ms.author: genemi
 manager: craigg
 ---
 # Use Nested FOR XML Queries in ASP.NET
@@ -86,7 +86,7 @@ using(System.Data.SqlClient.SqlCommand cmd = c.CreateCommand())
   
 2.  Save the .aspx application in the c:\inetpub\wwwroot directory (GetSalesOrderInfo.aspx).  
   
-3.  Execute the application (`http://server/GetSalesOrderInfo.aspx`).  
+3.  Execute the application (`https://server/GetSalesOrderInfo.aspx`).  
   
 ## See Also  
  [Use Nested FOR XML Queries](../../relational-databases/xml/use-nested-for-xml-queries.md)  

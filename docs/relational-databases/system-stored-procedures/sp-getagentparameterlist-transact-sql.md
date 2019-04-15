@@ -5,8 +5,7 @@ ms.date: "03/06/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_getagentparameterlist"
@@ -33,7 +32,7 @@ sp_getagentparameterlist [ @agent_type = ] 'agent_type'
 ```  
   
 ## Arguments  
- [ **@agent_type =** ] **'***agent_type***'**  
+`[ @agent_type = ] 'agent_type'`
  Is the replication agent for which the parameter is being added. *agent_type* is **int**, and can be one of these values:  
   
 |Value|Agent|  

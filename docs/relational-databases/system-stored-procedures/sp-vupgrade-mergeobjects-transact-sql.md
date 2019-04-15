@@ -5,8 +5,7 @@ ms.date: "03/14/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_vupgrade_mergeobjects"
@@ -41,13 +40,13 @@ sp_vupgrade_mergeobjects [ [@login = ] 'login' ]
 ```  
   
 ## Arguments  
- [ **@login=**] **'***login***'**  
+`[ @login = ] 'login'`
  Is the system administrator login to use when creating new system objects in the distribution database. *login* is **sysname**, with a default of NULL. This parameter is not required if *security_mode* is set to **1**, which is Windows Authentication.  
   
- [ **@password=**] **'***password***'**  
+`[ @password = ] 'password'`
  Is the system administrator password to use when creating new system objects in the distribution database. *password* is **sysname**, with a default of **''** (empty string). This parameter is not required if *security_mode* is set to **1**, which is Windows Authentication.  
   
- [ **@security_mode=**] **'***security_mode***'**  
+`[ @security_mode = ] 'security_mode'`
  Is the login security mode to use when creating new system objects in the distribution database. *security_mode* is **bit** with a default value of **1**. If **0**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Authentication will be used. If **1**, Windows Authentication will be used. [!INCLUDE[ssNoteWinAuthentication](../../includes/ssnotewinauthentication-md.md)]  
   
 ## Return Code Values  

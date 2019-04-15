@@ -5,8 +5,7 @@ ms.date: "03/04/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_helpqreader_agent_TSQL"
@@ -33,7 +32,7 @@ sp_helpqreader_agent [ [ @frompublisher = ] frompublisher ]
 ```  
   
 ## Arguments  
- [ **@frompublisher=** ] *frompublisher*  
+`[ @frompublisher = ] frompublisher`
  Specifies whether the stored procedure is called at the Publisher or at the Distributor. *frompublisher* is bit, with a default value of 0. **1** means that the stored procedure is called from the Publisher, and **0** means that the stored procedure is called from the Distributor.  
   
 ## Result Sets  

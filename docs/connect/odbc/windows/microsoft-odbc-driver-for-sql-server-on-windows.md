@@ -31,7 +31,7 @@ The Microsoft ODBC Driver for SQL Server can be used to create new applications.
 ## Documentation  
 This documentation for the Microsoft ODBC Driver for [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] includes:  
   
--   [Release Notes](../../../connect/odbc/windows/release-notes.md)  
+-   [Release Notes for ODBC to SQL Server on Windows](../../../connect/odbc/windows/release-notes-odbc-sql-server-windows.md)  
 -   [Features of the Microsoft ODBC Driver for SQL Server on Windows](../../../connect/odbc/windows/features-of-the-microsoft-odbc-driver-for-sql-server-on-windows.md)  
 -   [System Requirements, Installation, and Driver Files](../../../connect/odbc/windows/system-requirements-installation-and-driver-files.md)  
 -   [Driver-Aware Connection Pooling in the ODBC Driver for SQL Server](../../../connect/odbc/windows/driver-aware-connection-pooling-in-the-odbc-driver-for-sql-server.md)  
@@ -42,8 +42,8 @@ This documentation for the Microsoft ODBC Driver for [!INCLUDE[ssNoVersion](../.
 -   [Using Transparent Network IP Resolution](../../../connect/odbc/using-transparent-network-ip-resolution.md)   
 
 ## Community  
-- [Microsoft ODBC Driver For SQL Server Team blog](http://blogs.msdn.com/sqlnativeclient/default.aspx)  
-- [SQL Server Data Access Forum](http://social.technet.microsoft.com/Forums/en/sqldataaccess/threads)  
+- [Microsoft ODBC Driver For SQL Server Team blog](https://blogs.msdn.com/sqlnativeclient/default.aspx)  
+- [SQL Server Data Access Forum](https://social.technet.microsoft.com/Forums/en/sqldataaccess/threads)  
   
 ## See Also  
 - [About SQL Server Native Client](https://msdn.microsoft.com/sqlserver/ff658532.aspx)   

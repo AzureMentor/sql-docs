@@ -1,6 +1,7 @@
 ---
-title: "Always On Availability Groups extended events (SQL Server) | Microsoft Docs"
-ms.custom: "ag-guide"
+title: "Configure extended events for availability groups"
+description: "SQL Server defines extended events that are specific to Always On availability groups. You can monitor these extended events in a session to help with root-cause diagnosis when you troubleshoot an availability group."
+ms.custom: "ag-guide, seodec18"
 ms.date: "06/13/2017"
 ms.prod: sql
 ms.reviewer: ""
@@ -11,9 +12,9 @@ author: rothja
 ms.author: jroth
 manager: craigg
 ---
-# Always On Availability Groups extended events
+# Configure extended events for Always On availability groups
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-  SQL Server defines extended events that are specific to Always On Availability Groups. You can monitor these extended events in a session to help with root-cause diagnosis when you troubleshoot an availability group. You can view the availability group extended events using the following query:  
+  SQL Server defines extended events that are specific to Always On availability groups. You can monitor these extended events in a session to help with root-cause diagnosis when you troubleshoot an availability group. You can view the availability group extended events using the following query:  
   
 ```sql  
 SELECT * FROM sys.dm_xe_objects WHERE name LIKE '%hadr%'  
@@ -76,7 +77,7 @@ For information on some of the events covered by alwayson_health, see the [exten
   
  [error_reported (1480): Database replica role change](#BKMK_error_reported_1480)  
   
-###  <a name="BKMK_availability_replica_state_change "></a> availability_replica_state_change  
+###  <a name="BKMK_availability_replica_state_change"></a> availability_replica_state_change  
  Occurs when the state of an availability replica has changed. The creation of an availability group or joining an availability replica can trigger this event. It is useful for the diagnostics of failed automatic failover. It can also be used to trace the failover steps.  
   
 #### Event information  
@@ -349,7 +350,7 @@ GO
   
 |Column|Description|  
 |------------|-----------------|  
-|Name|error_reported<br /><br /> Error Number 1480: The REPLICATION_TYPE_MSG database "DATABASE_NAME" is changing roles from “OLD_ROLE” to “NEW_ROLE” due to REASON_MSG|  
+|Name|error_reported<br /><br /> Error Number 1480: The REPLICATION_TYPE_MSG database "DATABASE_NAME" is changing roles from "OLD_ROLE" to "NEW_ROLE" due to REASON_MSG|  
 |Category|errors|  
 |Channel|Admin|  
   
@@ -377,5 +378,3 @@ GO
   
 ## Next steps  
  [View event session data](https://msdn.microsoft.com/library/hh710068(v=sql.110).aspx)   
- 
-  

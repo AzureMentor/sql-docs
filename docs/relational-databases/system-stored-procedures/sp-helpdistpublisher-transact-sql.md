@@ -5,8 +5,7 @@ ms.date: "03/14/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_helpdistpublisher_TSQL"
@@ -34,10 +33,10 @@ sp_helpdistpublisher [ [ @publisher=] 'publisher']
 ```  
   
 ## Arguments  
- [ **@publisher=** ] **'***publisher***'**  
+`[ @publisher = ] 'publisher'`
  Is the Publisher for which properties are returned. *publisher* is **sysname**, with a default of **%**.  
   
- [ **@check_user=** ] *check_user*  
+`[ @check_user = ] check_user`
  [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]  
   
 ## Result Sets  

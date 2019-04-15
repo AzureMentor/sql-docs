@@ -5,8 +5,7 @@ ms.date: "03/06/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_helppeerresponses_TSQL"
@@ -33,7 +32,7 @@ sp_helppeerresponses [ @request_id = ] request_id
 ```  
   
 ## Arguments  
- [ **@request_id**= ] *request_id*  
+`[ @request_id = ] request_id`
  Is the ID of a specific status request. *request_id* is **int**, with no default.  
   
 ## Result Sets  

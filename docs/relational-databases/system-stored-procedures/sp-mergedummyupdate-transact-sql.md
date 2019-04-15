@@ -5,8 +5,7 @@ ms.date: "03/04/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_mergedummyupdate_TSQL"
@@ -33,10 +32,10 @@ sp_mergedummyupdate [ @source_object =] 'source_object', [ @rowguid =] 'rowguid'
 ```  
   
 ## Arguments  
- [ **@source_object=**] **'***source_object***'**  
+`[ @source_object = ] 'source_object'`
  Is the name of the source object. *source_object*is **nvarchar(386)**, with no default.  
   
- [ **@rowguid=**] **'***rowguid***'**  
+`[ @rowguid = ] 'rowguid'`
  Is the row identifier. *rowguid* is **uniqueidentifier**, with no default.  
   
 ## Return Code Values  

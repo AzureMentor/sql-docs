@@ -5,8 +5,7 @@ ms.date: "03/14/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_replcmds_TSQL"
@@ -36,7 +35,7 @@ sp_replcmds [ @maxtrans = ] maxtrans
 ```  
   
 ## Arguments  
- [ **@maxtrans=**]  *maxtrans*  
+`[ @maxtrans = ] maxtrans`
  Is the number of transactions to return information about. *maxtrans* is **int**, with a default of **1**, which specifies the next transaction waiting for distribution.  
   
 ## Result Sets  

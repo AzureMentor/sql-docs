@@ -5,8 +5,7 @@ ms.date: "03/04/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_revoke_publication_access_TSQL"
@@ -33,10 +32,10 @@ sp_revoke_publication_access [ @publication = ] 'publication' , [ @login = ] 'lo
 ```  
   
 ## Arguments  
- [ **@publication=**] **'***publication***'**  
+`[ @publication = ] 'publication'`
  Is the name of the publication to access. *publication* is **sysname**, with no default.  
   
- [ **@login=**] **'***login***'**  
+`[ @login = ] 'login'`
  Is the login ID. *login* is **sysname**, with no default.  
   
 ## Return Code Values  

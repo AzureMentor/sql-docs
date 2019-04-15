@@ -5,8 +5,7 @@ ms.date: "03/06/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_script_synctran_commands"
@@ -34,10 +33,10 @@ sp_script_synctran_commands [@publication = ] 'publication'
 ```  
   
 ## Arguments  
- [ **@publication** = ] **'***publication***'**  
+`[ @publication = ] 'publication'`
  Is the name of the publication to be scripted. *publication* is **sysname**, with no default.  
   
- [ **@article** = ] **'***article***'**  
+`[ @article = ] 'article'`
  Is the name of the article to be scripted. *article* is **sysname**, with a default of **all**, which specifies all articles are scripted.  
   
 ## Return Code Values  

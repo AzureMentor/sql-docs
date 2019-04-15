@@ -5,8 +5,7 @@ ms.date: "03/14/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_changereplicationserverpasswords_TSQL"
@@ -36,23 +35,23 @@ sp_changereplicationserverpasswords [ @login_type = ] login_type
 ```  
   
 ## Arguments  
- [ **@login_type** = ] *login_type*  
+`[ @login_type = ] login_type`
  Is the type of authentication for the supplied credentials. *login_type* is **tinyint**, with no default.  
   
  **1** = Windows Integrated Authentication  
   
  **0** = [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Authentication  
   
- [ **@login** = ] **'***login***'**  
+`[ @login = ] 'login'`
  Is the name of the Windows account or [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] login being changed. *login* is **nvarchar(257)**, with no default  
   
- [ **@password** = ] **'***password***'**  
+`[ @password = ] 'password'`
  Is the new password to be stored for the specified *login*. *password* is **sysname**, with no default.  
   
 > [!NOTE]  
 >  After changing a replication password, you must stop and restart each agent that uses the password before the change takes effect for that agent.  
   
- [ **@server** = ] **'***server***'**  
+`[ @server = ] 'server'`
  Is the server connection for which the stored password is being changed. *server* is **sysname**, and can be one of these values:  
   
 |Value|Description|  

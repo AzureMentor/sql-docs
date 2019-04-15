@@ -4,13 +4,10 @@ ms.custom: ""
 ms.date: "03/06/2017"
 ms.prod: "sql-server-2014"
 ms.reviewer: ""
-ms.suite: ""
 ms.technology: 
   - "database-engine"
-ms.tgt_pltfrm: ""
 ms.topic: conceptual
 ms.assetid: a9f99670-e1de-441e-972c-69faffcac17a
-caps.latest.revision: 7
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
@@ -36,7 +33,7 @@ manager: craigg
   
 2.  When connected to the newly created database, open the query window. Run the following statement:  
   
-    ```tsql  
+    ```sql  
   
     USE TestDB3Restore;   
     GO   
@@ -50,7 +47,7 @@ manager: craigg
   
 3.  Next, copy and run the following statements in the Query window.  
   
-    ```tsql  
+    ```sql  
   
     USE master;   
     GO   

@@ -5,8 +5,7 @@ ms.date: "03/04/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_replication_agent_checkup_TSQL"
@@ -33,7 +32,7 @@ sp_replication_agent_checkup [ [ @heartbeat_interval = ] heartbeat_interval ]
 ```  
   
 ## Arguments  
- [ **@heartbeat_interval** = ] **'***heartbeat_interval***'**  
+`[ @heartbeat_interval = ] 'heartbeat_interval'`
  Is the maximum number of minutes that an agent can go without logging a progress message. *heartbeat_interval* is **int**, with a default of 10 minutes.  
   
 ## Return Code Values  

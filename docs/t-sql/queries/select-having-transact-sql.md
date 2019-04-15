@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "HAVING clause"
   - "HAVING clause, about HAVING clause"
 ms.assetid: 55650709-001e-42f4-902f-ead09a3c34af
-author: "douglaslMS"
-ms.author: "douglasl"
+author: VanMSFT
+ms.author: vanto
 manager: craigg
 monikerRange: ">=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||=sqlallproducts-allversions||>=sql-server-linux-2017||=azuresqldb-mi-current"
 ---
@@ -45,7 +45,7 @@ monikerRange: ">=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-s
 ## Examples  
  The following example that uses a simple `HAVING` clause retrieves the total for each `SalesOrderID` from the `SalesOrderDetail` table that exceeds `$100000.00`.  
   
-```  
+```sql
 USE AdventureWorks2012 ;  
 GO  
 SELECT SalesOrderID, SUM(LineTotal) AS SubTotal  
@@ -58,7 +58,7 @@ ORDER BY SalesOrderID ;
 ## Examples: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] and [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
  The following example uses a `HAVING` clause to retrieve the total for each `SalesAmount` from the `FactInternetSales` table when the `OrderDateKey` is in the year 2004 or later.  
   
-```  
+```sql
 -- Uses AdventureWorks  
   
 SELECT OrderDateKey, SUM(SalesAmount) AS TotalSales   

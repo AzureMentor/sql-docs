@@ -5,8 +5,7 @@ ms.date: "03/06/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_helpmergepartition"
@@ -35,16 +34,16 @@ sp_helpmergepartition [ @publication= ] 'publication'
 ```  
   
 ## Arguments  
- [ **@publication=** ] **'***publication***'**  
+`[ @publication = ] 'publication'`
  Is the name of the publication. *publication* is **sysname**, with no default.  
   
- [ **@suser_sname=** ] **'***suser_sname***'**  
+`[ @suser_sname = ] 'suser_sname'`
  Is the SUSER_SNAME value used to define a partition. *suser_sname* is **sysname**, with a default value of NULL. Supply this parameter to limit the result set to only partitions where SUSER_SNAME resolves to the supplied value.  
   
 > [!NOTE]  
 >  When *suser_sname* is supplied, *host_name* must be NULL  
   
- [ **@host_name=** ] **'***host_name***'**  
+`[ @host_name = ] 'host_name'`
  Is the HOST_NAME value used to define a partition. *host_name* is **sysname**, with a default value of NULL. Supply this parameter to limit the result set to only partitions where HOST_NAME resolves to the supplied value.  
   
 > [!NOTE]  

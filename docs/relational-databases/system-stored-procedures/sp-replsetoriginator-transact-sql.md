@@ -5,8 +5,7 @@ ms.date: "03/06/2017"
 ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
-ms.technology: 
-  - "replication"
+ms.technology: replication
 ms.topic: "language-reference"
 f1_keywords: 
   - "sp_replsetoriginator"
@@ -34,10 +33,10 @@ sp_replsetoriginator [ @server_name= ] 'server_name'
 ```  
   
 ## Arguments  
- [ **@server_name=**] **'***server_name***'**  
+`[ @server_name = ] 'server_name'`
  Is the name of the server where the transaction is being applied. *originating_server* is **sysname**, with no default.  
   
- [ **@database_name=**] **'***database_name***'**  
+`[ @database_name = ] 'database_name'`
  Is the name of the database where the transaction is being applied. *originating_db* is **sysname**, with no default.  
   
 ## Return Code Values  

@@ -1,13 +1,14 @@
 ---
-title: Configure SQL Server Always On Availability Group for high availability on Linux | Microsoft Docs
-description: 
+title: Configure SQL Server Always On Availability Group for high availability on Linux
+titleSuffix: SQL Server
+description: Learn about creating a SQL Server Always On Availability Group (AG) for high availability on Linux.
 author: MikeRayMSFT 
 ms.author: mikeray 
 manager: craigg
 ms.date: 02/14/2018
 ms.topic: conceptual
 ms.prod: sql
-ms.custom: "sql-linux"
+ms.custom: "sql-linux, seodec18"
 ms.technology: linux
 ms.assetid: 
 ---
@@ -126,6 +127,7 @@ Run **only one** of the following scripts:
    >[!IMPORTANT]
    >After you run the preceding script to create an AG with three synchronous replicas, do not run the following script:
 
+<a name="configOnly"></a>
 - Create AG with two synchronous replicas and a configuration replica:
 
    >[!IMPORTANT]
@@ -164,20 +166,20 @@ Run **only one** of the following scripts:
 
    ```SQL
    CREATE AVAILABILITY GROUP [ag1]
-      WITH (CLUSTER_TYPE = EXTERNAL)
-      FOR REPLICA ON
-      N'node1' WITH (
+      WITH (CLUSTER_TYPE = EXTERNAL)
+      FOR REPLICA ON
+      N'node1' WITH (
          ENDPOINT_URL = N'tcp://node1:5022',
-         AVAILABILITY_MODE = SYNCHRONOUS_COMMIT,
-         FAILOVER_MODE = EXTERNAL,
-         SEEDING_MODE = AUTOMATIC
-      ),
-      N'node2' WITH ( 
-         ENDPOINT_URL = N'tcp://node2:5022', 
-         AVAILABILITY_MODE = SYNCHRONOUS_COMMIT,
-         FAILOVER_MODE = EXTERNAL,
-         SEEDING_MODE = AUTOMATIC
-      );
+         AVAILABILITY_MODE = SYNCHRONOUS_COMMIT,
+         FAILOVER_MODE = EXTERNAL,
+         SEEDING_MODE = AUTOMATIC
+      ),
+      N'node2' WITH ( 
+         ENDPOINT_URL = N'tcp://node2:5022', 
+         AVAILABILITY_MODE = SYNCHRONOUS_COMMIT,
+         FAILOVER_MODE = EXTERNAL,
+         SEEDING_MODE = AUTOMATIC
+      );
    		
    ALTER AVAILABILITY GROUP [ag1] GRANT CREATE ANY DATABASE;
    ```
@@ -205,7 +207,7 @@ ALTER AVAILABILITY GROUP [ag1] GRANT CREATE ANY DATABASE;
 [!INCLUDE [Create Post](../includes/ss-linux-cluster-availability-group-create-post.md)]
 
 >[!IMPORTANT]
->After you create the AG, you must configure integration with a cluster technology like Pacemaker for high availability. For a read-scale configuration using AGs, starting with [!INCLUDE [SQL Server version](..\includes\sssqlv14-md.md)], setting up a cluster is not required.
+>After you create the AG, you must configure integration with a cluster technology like Pacemaker for high availability. For a read-scale configuration using AGs, starting with [!INCLUDE [SQL Server version](../includes/sssqlv14-md.md)], setting up a cluster is not required.
 
 If you followed the steps in this document, you have an AG that is not yet clustered. The next step is to add the cluster. This configuration is valid for read-scale/load balancing scenarios, it is not complete for high availability. For high availability, you need to add the AG as a cluster resource. See [Next steps](#next-steps) for instructions. 
 

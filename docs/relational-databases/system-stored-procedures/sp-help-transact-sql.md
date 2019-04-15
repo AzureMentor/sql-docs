@@ -36,7 +36,7 @@ sp_help [ [ @objname = ] 'name' ]
 ```  
   
 ## Arguments  
- [ **@objname=**] **'***name***'**  
+`[ @objname = ] 'name'`
  Is the name of any object, in **sysobjects** or any user-defined data type in the **systypes** table. *name* is **nvarchar(**776**)**, with a default of NULL. Database names are not acceptable.  Two or three part names must be delimited, such as 'Person.AddressType' or [Person.AddressType].   
    
   
@@ -44,7 +44,7 @@ sp_help [ [ @objname = ] 'name' ]
  0 (success) or 1 (failure)  
   
 ## Result Sets  
- The result sets that are returned depend on whether *name* is specified, when it is specified, and what database object it is.  
+ The result sets that are returned depend on whether *name* is specified, when it is specified, and which database object it is.  
   
 1.  If **sp_help** is executed with no arguments, summary information of objects of all types that exist in the current database is returned.  
   

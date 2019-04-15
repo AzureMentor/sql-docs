@@ -28,8 +28,8 @@ helpviewer_keywords:
   - "computed sums"
   - "WHERE clause, SELECT statement"
 ms.assetid: 9b9caa3d-e7d0-42e1-b60b-a5572142186c
-author: "douglaslMS"
-ms.author: "douglasl"
+author: VanMSFT
+ms.author: vanto
 manager: craigg
 ---
 # SELECT Examples (Transact-SQL)
@@ -126,7 +126,7 @@ manager: craigg
   
  This query uses the `LIKE` clause in the `HAVING` clause.  
   
-```  
+```sql
 USE AdventureWorks2012 ;  
 GO  
 SELECT SalesOrderID, CarrierTrackingNumber   
