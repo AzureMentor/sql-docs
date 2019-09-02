@@ -1,16 +1,15 @@
 ---
 title: "Upgrade and Migrate Reporting Services | Microsoft Docs"
 ms.prod: "sql-server-2014"
-ms.technology: 
-  - "database-engine"
+ms.technology: "database-engine"
 ms.topic: conceptual
 helpviewer_keywords: 
   - "SSRS, upgrading"
   - "Reporting Services, upgrades"
   - "SQL Server Reporting Services, upgrading"
   - "upgrading Reporting Services"
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ms.reviewer: ""
 ms.custom: ""

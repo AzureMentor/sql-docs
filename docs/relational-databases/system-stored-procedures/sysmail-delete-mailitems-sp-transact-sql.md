@@ -17,7 +17,6 @@ helpviewer_keywords:
 ms.assetid: f87c9f4a-bda1-4bce-84b2-a055a3229ecd
 author: "stevestein"
 ms.author: "sstein"
-manager: craigg
 ---
 # sysmail_delete_mailitems_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -45,7 +44,7 @@ sysmail_delete_mailitems_sp  [ [ @sent_before = ] 'sent_before' ]
  **0** (success) or **1** (failure)  
   
 ## Remarks  
- Database Mail messages and their attachments are stored in the **msdb** database. Messages should be periodically deleted to prevent **msdb** from growing larger than expected and to comply with your organizations document retention program. Use the **sysmail_delete_mailitems_sp** stored procedure to permanently delete e-mail messages from the Database Mail tables. An optional argument allows you to delete only older e-mails by providing a date and time. E-mails older than that argument will be deleted. Another optional argument allows you to delete only e-mails of a certain type, specified as the **sent_status** argument. You must provide an argument either for **@sent_before** or **@sent_status**. To delete all messages, use **@sent_before = getdate()**.  
+ Database Mail messages and their attachments are stored in the **msdb** database. Messages should be periodically deleted to prevent **msdb** from growing larger than expected and to comply with your organizations document retention program. Use the **sysmail_delete_mailitems_sp** stored procedure to permanently delete e-mail messages from the Database Mail tables. An optional argument allows you to delete only older e-mails by providing a date and time. E-mails older than that argument will be deleted. Another optional argument allows you to delete only e-mails of a certain type, specified as the **sent_status** argument. You must provide an argument either for **\@sent_before** or **\@sent_status**. To delete all messages, use **\@sent_before = getdate()**.  
   
  Deleting e-mail also deletes attachments related to those messages. Deleting e-mail does not delete the corresponding entries in **sysmail_event_log**. Use [sysmail_delete_log_sp](../../relational-databases/system-stored-procedures/sysmail-delete-log-sp-transact-sql.md) to delete items from the log.  
   

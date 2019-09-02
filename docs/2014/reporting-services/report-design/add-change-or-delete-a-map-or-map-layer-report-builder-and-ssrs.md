@@ -4,8 +4,7 @@ ms.custom: ""
 ms.date: "06/13/2017"
 ms.prod: "sql-server-2014"
 ms.reviewer: ""
-ms.technology: 
-  - "reporting-services-native"
+ms.technology: "reporting-services-native"
 ms.topic: conceptual
 f1_keywords: 
   - "10526"
@@ -25,8 +24,8 @@ f1_keywords:
   - "10527"
   - "sql12.rtp.rptdesigner.maplayerproperties.analyticaldata.f1"
 ms.assetid: 6e89815e-187e-45bf-bf63-3d5c4a246360
-author: markingmyname
-ms.author: maghan
+author: maggiesMSFT
+ms.author: maggies
 manager: kfile
 ---
 # Add, Change, or Delete a Map or Map Layer (Report Builder and SSRS)

@@ -13,7 +13,6 @@ helpviewer_keywords:
 ms.assetid: 4e001426-5ae0-4876-85ef-088d6e3fb61c
 author: MashaMSFT
 ms.author: mathoma
-manager: craigg
 monikerRange: ">=sql-server-2016||=sqlallproducts-allversions"
 ---
 # Configure replication with Always On availability groups
@@ -21,22 +20,6 @@ monikerRange: ">=sql-server-2016||=sqlallproducts-allversions"
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
   Configuring [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] replication and Always On availability groups involves seven steps. Each step is described in more detail in the following sections.  
-  
-1.  [Configure the database publications and subscriptions.](#step1)  
-  
-2.  [Configure the Always On availability group.](#step2)  
-  
-3.  [Ensure that all secondary replica hosts are configured for replication.](#step3)  
-  
-4.  [Configure the secondary replica hosts as replication publishers.](#step4)  
-  
-5.  [Redirect the original publisher to the Availability Group Listener Name.](#step5)  
-  
-6.  [Run the validation stored procedure to verify the configuration.](#step6)  
-  
-7.  [Add the original publisher to Replication Monitor.](#step7)  
-  
- Steps 1 and 2 can be performed in either order.  
   
 ##  <a name="step1"></a> 1. Configure the Database Publications and Subscriptions  
  **Configure the distributor**  
